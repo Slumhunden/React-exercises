@@ -10,7 +10,10 @@ export default function UserTableWithButtons({ users, editUser }: UserTableProps
 
 
   // 1) Implement an eventhandler that will handle the edit button click and call the editUser callback
-const handleEditUser = (userId: number) => {};
+const handleEditUser = (userId: number) => {
+    editUser(userId);
+};
+
   // 2) When done, attach the event handler to the edit button
 
 
